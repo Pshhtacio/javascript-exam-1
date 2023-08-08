@@ -15,26 +15,26 @@ describe('array filter test', () => {
     });
 
     test('should return an array containing only words with the length of 4 when filterLengthWith4 is applied', () => {
-        const numbers = ['Alpha', 'Beta', 'Charlie', 'Delta', 'Echo'];
+        const words = ['Alpha', 'Beta', 'Charlie', 'Delta', 'Echo'];
         const result = filterLengthWith4(numbers);
         expect(result).toBe['Beta', 'Echo'];
     });
 
     test('should return an empty array when filterLengthWith4 is applied', () => {
-        const numbers = ['Apple', 'Banana', 'Cat', 'Dog', 'Egg'];
+        const words = ['Apple', 'Banana', 'Cat', 'Dog', 'Egg'];
         const result = filterLengthWith4(numbers);
         const emptyArray = [];
         expect(result).toEqual(emptyArray);
     });
 
     test('should return an array containing only words that starts with the letter a when filterStartWithA is applied', () => {
-        const numbers = ['Alpha', 'ant', 'Beta', 'boy', 'Carcasses'];
+        const words = ['Alpha', 'ant', 'Beta', 'boy', 'Carcasses'];
         const result = filterLengthWith4(numbers);
         expect(result).toBe['Alpha', 'ant'];
     });
 
     test('should return an empty array when filterStartWithA is applied', () => {
-        const numbers = ['Banana', 'Cat', 'Dog', 'Egg'];
+        const words = ['Banana', 'Cat', 'Dog', 'Egg'];
         const result = filterLengthWith4(numbers);
         const emptyArray = [];
         expect(result).toEqual(emptyArray);
