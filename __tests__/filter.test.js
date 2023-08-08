@@ -8,9 +8,18 @@ describe('array filter test', () => {
     });
 
     test('should return an empty array when filterEvenNumbers is applied', () => {
-        const numbers = [1, 3, 5];
+        const numbers = [1, 3, 5, 7];
         const result = filterEvenNumbers(numbers);
         const emptyArray = [];
         expect(result).toEqual(emptyArray);
+    });
+
+    test('should throw an error when invalid input is provided', () => {
+        const invalidInputs = null;
+         expect(() => {
+         filterEvenNumbers(invalidInput);
+         filterLengthWith4(invalidInput);
+         filterStartWithA(invalidInput);
+         }).toThrow();
     });
 });
