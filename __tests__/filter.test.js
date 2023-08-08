@@ -41,7 +41,7 @@ describe('array filter test', () => {
     });
 
     test('should throw an error when invalid input is provided', () => {
-        const invalidInputs = null;
+        const invalidInput = null;
          expect(() => {
          filterEvenNumbers(invalidInput);
          filterLengthWith4(invalidInput);

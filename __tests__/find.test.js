@@ -40,7 +40,7 @@ describe("array find test", () => {
     });
 
     test('should throw an error when invalid input is provided', () => {
-        const invalidInputs = null;
+        const invalidInput = null;
         expect(() => {
             firstGrownUp(invalidInput);
             firstOrange(invalidInput);
